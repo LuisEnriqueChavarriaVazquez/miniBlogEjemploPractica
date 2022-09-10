@@ -1,0 +1,365 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('../assets/img/Cover.png');
+
+    width: 100%;
+    height: 100%;
+    /*Esta medida no es tan exacta por 
+    lo que lo hare con js para la eqyiqueta de main*/
+    /*height: calc(100vh - 133.72px);*/
+}
+
+.mainContainer_titleContainer{
+    font-family: 'Nova Mono';
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    width: 60%;
+    color: var(--white);
+    margin-bottom: 50px;
+}
+
+.mainContainer_buttonContainer{
+    padding: 25px 50px;
+    background-color: var(--greyLight-2);
+    box-shadow: var(--box-shadow-2);
+    border-radius: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer_buttonContainer p{
+    font-size: 2.5rem;
+}
+
+.mainContainer_buttonContainer a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*Main Container Blogs*/
+
+.mainContainerBlogs{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.mainContainerBlogs > .mainContainerBlogs-newsContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--greyLight-1);
+    box-shadow: var(--box-shadow-2);
+
+    margin-bottom: 10px;
+}
+
+.mainContainerBlogs > section div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: auto;
+
+    padding: 30px 50px 35px 50px
+}
+
+.mainContainerBlogs-div1 h1{
+    font-size: 3rem;
+    font-family: Consolas;
+    margin-bottom: 10px;
+}
+
+.mainContainerBlogs-div1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.mainContainerBlogs-div2 h2{
+    font-family: Consolas;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.mainContainerBlogs-div2 p{
+    font-family: Consolas;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.mainContainerBlogs-div2 button{
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 2rem;
+}
+
+.postContainer{
+    width: 100%;
+}
+
+.postContainer-titleSection{
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.postContainer-titleSection h2{
+    font-family: Consolas;
+    font-size: 2rem;
+}
+
+.postContainerInner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, auto) ;
+    gap: 25px;
+    height: auto;
+
+    padding: 50px 150px;
+    margin-top: 20px;
+}
+
+.cardPost{
+    padding: 0px !important;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.cardPost img{
+    width: 100%;
+}
+
+.cardPost div{
+    margin: 0 !important;
+    padding: 30px 0px !important;
+}
+
+.cardPost div h3,p,button{
+    font-family: Consolas;
+    margin-bottom: 30px;
+}
+
+.cardPost div h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.cardPost div p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.cardPost div button{
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: 100px;
+
+    background-color: var(--blue-darken-3);
+
+    display: flex;
+    align-items: flex-end;
+}
+
+footer div{
+    width: 100%;
+    height: 80px;
+
+    color: var(--white);
+    background-color: var(--blue-darken-4);
+    font-family: Consolas;
+    font-size: 1.6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerExtra{
+    width: 100%;
+    height: 300px;
+    background-color: var(--greyLight-3);
+}
+
+.footerExtra .footerLinkContainer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 280px;
+
+    justify-items: center;
+    align-items: center;
+
+    background-color: var(--greyLight-2);
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksContainer div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linksContainer div h4,p{
+    font-family: Consolas !important;
+}
+
+.linksContainer div h4{
+    font-size: 2rem;
+}
+
+.linksContainer div p{
+    font-size: 1.6rem;
+}
+
+.linksContainer div img{
+    width: 100px;
+}
+
+/*Content blog post*/
+
+.mainContentBlog{
+    padding: 50px 150px;
+    box-sizing: border-box;
+}
+
+.mainContentBlog div{
+    width: 100%;
+}
+
+.mainContentBlog div img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.mainContentBlog .blogText{
+    padding: 30px 100px 0 100px;
+    box-sizing: border-box;
+} 
+
+.mainContentBlog .blogText h4{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: Consolas;
+} 
+
+.mainContentBlog .blogText hr, h5, p{
+    margin: 30px 0;
+    font-family: Consolas;
+} 
+
+.mainContentBlog .blogText h5{
+    font-size: 3.7rem;
+} 
+
+.mainContentBlog .blogText p{
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+} 
+
+/*Seccion de perfil*/
+
+/*Main Container Blogs*/
+
+.mainContainerProfile{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.mainContainerProfile > .mainContainerProfile-newsContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--greyLight-1);
+    box-shadow: var(--box-shadow-2);
+
+    margin-bottom: 10px;
+}
+
+.mainContainerProfile > section div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: auto;
+
+    padding: 30px 50px 35px 50px
+}
+
+.mainContainerProfile-div1 h1{
+    font-size: 3rem;
+    font-family: Consolas;
+    margin-bottom: 10px;
+}
+
+.mainContainerProfile-div1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.mainContainerProfile-div2 h2{
+    font-family: Consolas;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.mainContainerProfile-div2 p{
+    font-family: Consolas;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.mainContainerProfile-div2 button{
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 2rem;
+}
+
+
+
+
+

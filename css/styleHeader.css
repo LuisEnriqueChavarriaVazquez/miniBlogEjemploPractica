@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    /*Colores claros*/
+    --blue-lighten-5: #e3f2fd; 
+    --blue-lighten-4: #bbdefb;
+    --blue-lighten-3: #90caf9;
+    --blue-lighten-2: #64b5f6;
+    --blue-lighten-1: #42a5f5;
+    /*Colores oscuros*/
+    --blue: #2196f3;
+    --blue-darken-1: #1e88e5;
+    --blue-darken-2: #1976d2;
+    --blue-darken-3: #1565c0;
+    --blue-darken-4: #0d47a1;
+    /*Colores brillantes*/
+    --blue-accent-1: #82b1ff;
+    --blue-accent-2: #448aff;
+    --blue-accent-3: #2979ff;
+    --blue-accent-4: #2962ff;
+    /*Blanco y negro*/
+    --white: #fff;
+    --black: #000;
+    --greyDark-1: #424242;
+    --greyDark-2: #212121;
+    --greyLight-1: #eeeeee;
+    --greyLight-2: #e0e0e0;
+    --greyLight-3: #bdbdbd;
+    /*Sombras de cajas*/
+    --box-shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --box-shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --box-shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --box-shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --box-shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+body{
+    height: 100vh;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+
+    background-color: var(--greyLight-3);
+    box-shadow: var(--box-shadow-2);
+    z-index: 1000;
+}
+
+.headerContainerIcons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    color: var(--white);
+    background-color: var(--greyLight-2);
+    padding: 10px 20px;
+}
+
+.headerContainerIcons div{
+    padding: 5px 20px;
+    margin: 3px 10px;
+    background-color: var(--greyDark-2);
+    box-shadow: var(--box-shadow-2);
+    border-radius: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainerIcons span{
+    font-size: 1.8rem;
+    margin: 4px;
+}
+
+.headerContainerLogo{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.headerContainerLogo .headerContainerLogo_logoContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.headerContainerLogo .headerContainerLogo_logoContainer img{
+    width: 20%;
+}
+
+.headerContainerLogo .headerContainerLogo_linkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainerLogo .headerContainerLogo_linkContainer div{
+    margin: 5px 10px;
+    background-color: var(--greyLight-2);
+    box-shadow: var(--box-shadow-1);
+    border-radius: 500px;
+    padding: 10px 40px;
+}
+
+.headerContainerLogo .headerContainerLogo_linkContainer div a{
+    color:var(--greyDark-1);
+    font-weight: 900;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+
+
